@@ -28,7 +28,6 @@ async def init_db():
             )''')
     
     
-    
 async def add_query(name, contact, message, option):
     async with POOL.acquire() as conn:
         async with conn.transaction():
@@ -40,5 +39,5 @@ async def get_all_queries():
     async with POOL.acquire() as conn:
         async with conn.transaction():
             result = await conn.fetch('SELECT * FROM queries')
-            
+
     return list(map(tuple, result))

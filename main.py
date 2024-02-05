@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, make_response, redirect
 from helpers import *
+import asyncio
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -48,5 +49,6 @@ async def allqueries():
 # def catalog():
 #     return render_template('catalog.html')
 
-
-app.run(host='0.0.0.0', port=5050, debug=True)
+if __name__ == '__main__':
+    asyncio.run(init_db())
+    app.run(host='0.0.0.0', port=5050, debug=True)
