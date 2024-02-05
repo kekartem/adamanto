@@ -50,5 +50,6 @@ async def allqueries():
 #     return render_template('catalog.html')
 
 if __name__ == '__main__':
-    asyncio.run(init_db())
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(init_db())
     app.run(host='0.0.0.0', port=5050, debug=True)
