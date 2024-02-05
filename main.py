@@ -35,7 +35,7 @@ async def submitmessage():
     name = request.form.get('name')
     contact = request.form.get('email') + ' / ' + request.form.get('phonenumber')
     message = request.form.get('message')
-    add_query(name, contact, message, '-')
+    await add_query(name, contact, message, '-')
     return redirect('/')
 
 
