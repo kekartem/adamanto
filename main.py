@@ -40,14 +40,13 @@ async def submitmessage():
 
 @app.route('/allqueries/')
 async def allqueries():
-    queries = get_all_queries()
+    queries = await get_all_queries()
     return render_template('allqueries.html', queries=queries)
 
 
 # @app.route('/catalog/')
 # def catalog():
 #     return render_template('catalog.html')
-
 
 
 app.run(host='0.0.0.0', port=5050, debug=True)
