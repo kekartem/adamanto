@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: blue;
+        color: white;
+        box-sizing: border-box;
+        font-size: 3em;
+        flex-direction: column;
+    }
+
+    .row {
+        width: 100vw;
+        display: flex;
+        height: 50vh;
+        justify-content: flex-start;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <img src="http://s00.yaplakal.com/pics/pics_original/5/8/0/13171085.jpg" alt="">
+        <img src="https://livacha.com/upload/blog/cover/aa/a9/blog_0A0j9_ZtMx0wv27HVVwNlrnfCGs6ZJkS6xvcaUIyb5aznC.jpeg" alt="">
+        <img src="https://gpress.info/wp-content/uploads/2016/11/2016_gay1.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/de/e5/eb/dee5eb7493471285ca0658c8a29178ee.jpg" alt=""></div>
+    <div class="row">
+        <img src="https://huivpizde.com/uploads/posts/2023-02/1677179028_huivpizde-com-p-porno-s-trudom-chlen-v-anus-parnya-11.jpg" alt="">
+        <img src="https://topdevka.com/uploads/posts/2023-01/1674030334_23-topdevka-com-p-erotika-muzhchina-soset-svoi-chlen-29.jpg" alt="">
+        <img src="https://gpress.info/wp-content/uploads/2016/11/2016_gay1.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/de/e5/eb/dee5eb7493471285ca0658c8a29178ee.jpg" alt=""></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<script>
+// Получаем элемент header
+let header = document.querySelector('header')
+
+// "Выключатель" для анимации, чтобы она не начиналась заново если в течение 300 миллисек выполнения анимации юзер прокрутит страницу ещё раз
+let state = 'visible'
+
+// Ловим событие "scroll"
+window.addEventListener('scroll', function() {
+    console.log('kk')
+    // Если текущий скролл больше 128px (именно столько потому что просто я так захотел, можно другое число), анимируем прозрачность с помощью библиотеки для анимаций
+    if (window.pageYOffset >= 128 && state == 'visible') {
+        state = 'invisible'
+        // Запуск анимации блока header, меняем background, color с продолжительностью 300ms
+        anime({
+            targets: 'header',
+            background: 'rgba(255, 255, 255, 0)',
+            color: 'rgb(255, 255, 255)',
+            duration: 300,
+            easing: 'easeInQuad'
+        })
+    }
+
+    if (window.pageYOffset < 128 && state == 'invisible') {
+        state = 'visible'
+        anime({
+            targets: 'header',
+            background: 'rgba(255, 255, 255, 1)',
+            color: 'black',
+            duration: 300,
+            easing: 'easeInQuad',
+        })
+    }
+})
+</script>
+</body>
+</html>

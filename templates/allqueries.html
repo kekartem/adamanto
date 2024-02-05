@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все заявки</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+</head>
+<style>
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+</style>
+<body>
+<table>
+    <tr><th>id</th><th>Имя</th><th>Контакт</th><th>Способ связи</th><th>Сообщение</th></tr>
+    {% for query in queries %}
+        <tr><td>{{ query[0] }}</td><td>{{ query[1] }}</td><td>{{ query[2] }}</td><td>{{ query[4] }}</td><td>{{ query[3] }}</td></tr>
+    {% endfor %}
+</table>
+</body>
+</html>

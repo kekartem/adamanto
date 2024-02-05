@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1800, initial-scale=10">
+    <title>AVANT | Архитектурное бюро</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+    <script>
+        if (parseInt(window.innerWidth) < 1800) {
+            document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
+        }   
+    </script>
+</head>
+<body>
+<header>
+    <div class="logo-location-group">
+        <div class="logo-group">
+            <img src="/static/images/logo.webp" alt="">
+        </div>
+        <div class="location">
+            <img src="/static/images/map-pin.webp" alt="">
+            <p>г. Казань</p>
+        </div>
+    </div>
+    <nav>
+        <p>Услуги</p>
+        <p>Каталог</p>
+        <div class="header-cta">Заказать проект</div>
+    </nav>
+    <div class="profile-group">
+        <div class="phone-group">
+            <img src="/static/images/phone.webp" alt="">
+            <p>+7 919 634-12-19</p>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="cover">
+        <h1>ADAMANTO</h1>
+        <p class="caption">Архитектурное бюро</p>
+        <p class="info">Разрабатываем проекты для малоэтажного строительства.<br>
+            Создаем пространство для жизни.</p>
+        <div class="cta-btn">Заказать проект</div>
+    </section>
+    <section class="about">
+        <h1>Ваши мечты о собственном доме станут реальностью с ADAMANTO</h1>
+        <div class="about-inner">
+            <div class="about-inner-img">
+                
+            </div>
+            <div class="about-inner-info">
+                <h2>Почувствуй уверенность в своем выборе</h2>
+                <p>С помощью передовых визуализационных программ, таких как Twinmotion, мы создадим наглядное представление вашего будущего дома. Представьте себе возможность пройти по каждой комнате, увидеть каждую деталь и оценить естественное сочетание вашего дома с окружающей природой.</p>
+            </div>
+        </div>
+    </section>
+    <section class="tech">
+        <h1 class="tech-heading">Технологии строительства</h1>
+        <div class="tech-cards">
+            <div class="tech-card">
+                <div class="tech-card-img-container"></div>
+                <div class="tech-description">
+                    <div class="tech-description-caption">
+                        <h3>Дома из газобетона</h3>
+                        <p>Газобетон (ячеистый бетон) сегодня считается одним из самых популярных строительных материалов, которые используют на рынке загородного жилья.</p>
+                    </div>
+                    <div class="tech-learn-more">
+                        <a href="/tech?id=1"><h4>Смотреть примеры</h4>
+                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-img-container"></div>
+                <div class="tech-description">
+                    <div class="tech-description-caption">
+                        <h3>Кирпичные дома</h3>
+                        <p>Дома из кирпича — это живая классика, символ надежности и долговечности. Это хорошая инвестиция в недвижимость.</p>
+                    </div>
+                    <div class="tech-learn-more">
+                        <a href="/tech?id=2"><h4>Смотреть примеры</h4>
+                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-img-container"></div>
+                <div class="tech-description">
+                    <div class="tech-description-caption">
+                        <h3>Дома из клееного бруса и оцилиндрованного бревна</h3>
+                        <p>Для ценителей природы и натуральных материалов. Самая популярная и традиционная технология для нашего климата.</p>
+                    </div>
+                    <div class="tech-learn-more">
+                        <a href="/tech?id=3"><h4>Смотреть примеры</h4>
+                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-img-container"></div>
+                <div class="tech-description">
+                    <div class="tech-description-caption">
+                        <h3>Каркасные дома</h3>
+                        <p>Каркасные дома одни из самых популярных на рынке загородного жилья. Основное преимущество каркасников — скорость и доступность строительства.</p>
+                    </div>
+                    <div class="tech-learn-more">
+                        <a href="/tech?id=3"><h4>Смотреть примеры</h4>
+                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="adv">
+        <h1>Проектируйте с нами</h1>
+        <div class="cards">
+            <div class="card card1">
+                <img src="/static/images/monitor.webp" alt="">
+                <h2>Опыт работы в проектировании более 15 лет</h2>
+                <p>Спроектировано и построено более 100 домов.</p>
+            </div>
+            <div class="card card2">
+                <img src="/static/images/interview.webp" alt="">
+                <h2>Интервью с заказчиком</h2>
+                <p>Для подробного изучения ваших желаний.</p>
+            </div>
+            <div class="card card3">
+                <img src="/static/images/map-pin.webp" alt="">
+                <h2>Подробный анализ вашего участка</h2>
+                <p>Климатическое обоснование для выбора строительной технологии</p>
+            </div>
+            <div class="card card4">
+                <img src="/static/images/visual.webp" alt="">
+                <h2>Профессиональноe выполнение работы с визуализацией</h2>
+                <p>От карандашного эскиза до полноценной проектной документацией с визуализацией.</p>
+            </div>
+            <div class="card card5">
+                <img src="/static/images/sketch.webp" alt="">
+                <h2>Сочетание строительного опыта с дизайнерским подходом</h2>
+                <p>Даёт возможность оптимального проектирования домов с учетом особенностей климата и соляризации участка, а так же определения точной сметной стоимости строительства.</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider-group">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="/static/images/slider/1.webp" alt="">
+                <img src="/static/images/slider/2.webp" alt="">
+                <img src="/static/images/slider/3.webp" alt="">
+                <img src="/static/images/slider/4.webp" alt="">
+                <img src="/static/images/slider/5.webp" alt="">
+            </div>
+            <div class="controls">
+                <div class="ar-lt"><img src="/static/images/slider/ar-lt.webp" alt=""></div>
+                <div class="ar-rt"><img src="/static/images/slider/ar-rt.webp" alt=""></div>
+            </div>
+            
+        </div>
+        
+        <div class="slider-btn">Скачать каталог</div>
+    </section>
+    <section class="services">
+        <h1>Ценности ADAMANTO</h1>
+        <div class="services-card">
+            <div class="service" id="s1">
+                <h3>Эскизное проектирование</h3>
+                <p>250 ₽/ м²</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+            <div class="service" id="s2">
+                <h3>Архитектурное решение</h3>
+                <p>800 ₽/ м²</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+            <div class="service" id="s3">
+                <h3>Конструктивные решения</h3>
+                <p>1000 ₽/ м²</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+            <div class="service" id="s4">
+                <h3>3D-визуализация</h3>
+                <p>300 ₽/ м²</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+            <div class="service" id="s5">
+                <h3>Интерьерное решение</h3>
+                <p>2500 ₽/ м²</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+            <div class="service" id="s6">
+                <h3>Контроль и сопровождение</h3>
+                <p>1.5% от сметной стоимости материалов</p>
+                <div class="service-learn-more">
+                    <p>Узнать больше</p>
+                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work">
+        <h1>Как мы работаем</h1>
+        <div class="leaves">
+            <div class="leaf leaf_1" id="l1" data-toggled="0">
+                <div class="leaf-cover">
+                    <h1>№ 1</h1>
+                    <div class="leaf-img-container">
+                    </div>
+                    <p>Анализ всего участка</p>
+                </div>
+                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+            </div>
+            <div class="leaf leaf_2" id="l2" data-toggled="0">
+                <div class="leaf-cover">
+                    <h1>№ 2</h1>
+                    <div class="leaf-img-container">
+                    </div>
+                    <p>Анализ геологического исследования</p>
+                </div>
+                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+            
+            </div>
+            <div class="leaf leaf_3" id="l3" data-toggled="0">
+                <div class="leaf-cover">
+                    <h1>№ 3</h1>
+                    <div class="leaf-img-container">
+                    </div>
+                    <p>Подбор технологии строительства и площади здания</p>
+                </div>
+                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+            </div>
+            <div class="leaf leaf_4" id="l4" data-toggled="0">
+                <div class="leaf-cover">
+                    <h1>№ 4</h1>
+                    <div class="leaf-img-container">
+                    </div>
+                    <p>Расработка эскизного проекта здания с учётом эргономики человека</p>
+                </div>
+                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+            
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="quote-main">
+            Учитываем самые модные тенденции малоэтажных домостроений на сегодняшний день.
+        </div>
+    </section>
+    <section class="apply" id="apply">
+        <div class="left">
+            <img src="/static/images/floating.webp" alt="">
+        </div>
+        <div class="right">
+            <div class="right-inner">
+                <h1>Получить бесплатную консультацию</h1>
+                <h2>Оставьте заявку</h2>
+                <form class="main-apply-form" action="/submitmessage/" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <input type="text" name="phonenumber" placeholder="Ваш телефон" required>
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                    <button class="main-apply-form-btn">
+                        Отправить заявку
+                    </button>
+                </form>
+                <p class="apply-form-caption">Заявка ни к чему вас не обязывает. Вы получите бесплатную консультацию.</p>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <h1>Наша команда</h1>
+        <p class="caption">Какой-то текст какой-то текст какой-то текст какой-то текст</p>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-card-left team-card-1">
+                </div>
+                <div class="team-card-right">
+                    <h1>Артём Хакимов</h1>
+                    <h2>Программист</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-left"></div>
+                <div class="team-card-right"></div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-left"></div>
+                <div class="team-card-right"></div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-left"></div>
+                <div class="team-card-right"></div>
+            </div>
+        </div>
+        <div class="team-controls-row">
+            <div class="team-controls-btn team-selected">1</div>
+            <div class="team-controls-btn">2</div>
+            <div class="team-controls-btn">3</div>
+            <div class="team-controls-btn">4</div>
+        </div>
+    </section>
+    <section class="map">
+        <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.uz/map-widget/v1/?ll=49.146223%2C55.780260&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjI2NDQ2MxJs0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0sINCa0LDQt9Cw0L3RjCwg0YPQu9C40YbQsCDQktC40YjQvdC10LLRgdC60L7Qs9C-LCAyNtCQIgoNvZREQhXJHl9C&z=16.31" style="border-radius: 20px;" width="100%" height="500" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section>
+    <div class="popup-container">
+        <div class="popup">
+            <h1>1</h1>
+            <div class="popup-text"></div>
+            <div class="close"><img src="/static/images/cross.webp" alt=""></div>
+        </div>
+        <div class="popup1">
+            <h2>Скачать каталог</h2>
+            <form class="main-apply-form" action="/getcatalog/" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <p>Куда вам удобно получить каталог?</p>
+                <div class="contact-option-row">
+                    <div class="contact-option selected"><img src="/static/images/icon-whatsapp.png" alt=""></div>
+                    <div class="contact-option"><img src="/static/images/icon-telegram.png" alt=""></div>
+                    <div class="contact-option"><img src="/static/images/icon-mail.png" alt=""></div>
+                </div>
+                <input type="hidden" name="option" class="contact-option-hidden" value="Whatsapp">
+                <div class="popup1-input-group">
+                    <div class="prefix">+7</div>
+                    <input class="prefix-input" type="text" name="contact" placeholder="Номер телефона" required>
+                </div>
+                <button class="main-apply-form-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+            <div class="close1"><img src="/static/images/cross.webp" alt=""></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-inner">
+        <div class="footer-img"><img src="/static/images/logo.webp" alt=""></div>
+        <div class="footer-menu">
+            <div class="footer-cta">Заказать проект</div>
+            <p>Услуги</p>
+            <p>Каталог</p>
+        </div>
+        <div class="contact-group">
+            <p><img src="/static/images/mail.webp" alt="">avaaant.ru@gmail.com</p>
+            <p><img src="/static/images/phone.webp" alt="">+7 919 634-12-19</p>
+            <p><img src="/static/images/map-pin.webp" alt="">г. Казань</p>
+        </div>
+    </div>
+    <div class="credits">
+        Designed by <a href="https://t.me/k_volchihina" target="_blank">@k_volchihina</a> | Developed by <a href="https://t.me/kekartem" target="_blank">@kekartem</a>
+    </div>
+</footer>
+<div class="aliya"><img src="/static/images/aliya.webp"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<!-- Easter-egg -->
+<!-- Popup1 form -->
+<script>
+    let contact_options = document.querySelectorAll('.contact-option')
+    contact_options.forEach(function(item) {
+        item.addEventListener('click', function() {
+            document.querySelector('.contact-option-row').querySelector('.selected').classList.remove('selected')
+            item.classList.add('selected')
+            if (item.querySelector('img').src.includes('whatsapp')) {
+                document.querySelector('.prefix').style.display = 'flex'
+                document.querySelector('.prefix').innerHTML = '+7'
+                document.querySelector('.prefix-input').placeholder = 'Номер телефона'
+                document.querySelector('.contact-option-hidden').value = 'Whatsapp'
+            } else if (item.querySelector('img').src.includes('telegram')) {
+                document.querySelector('.prefix').style.display = 'flex'
+                document.querySelector('.prefix').innerHTML = '@'
+                document.querySelector('.prefix-input').placeholder = 'Ник в телеграме'
+                document.querySelector('.contact-option-hidden').value = 'Telegram'
+            } else {
+                document.querySelector('.prefix').style.display = 'none'
+                document.querySelector('.prefix-input').placeholder = 'Адрес почты'
+                document.querySelector('.contact-option-hidden').value = 'Email'
+            }
+        })
+    })
+
+</script>
+<script>
+let aliya = document.querySelector('.aliya')
+let aliya_img = aliya.querySelector('img')
+aliya.addEventListener('click', function() {
+    anime({
+        targets: aliya_img,
+        scale: 1,
+        rotate: 20,
+        duration: 1000,
+        opacity: 1,
+        complete: function() {
+            setTimeout(function() {
+                anime({
+                    targets: aliya_img,
+                    scale: 0.2,
+                    rotate: 0,
+                    duration: 1000,
+                    opacity: 0,
+                })
+            }, 1000)
+        }
+    })
+})
+</script>
+<!-- Smooth scroll to form -->
+<script>
+function scrolltoform() {
+    let cta_form = document.querySelector('.right')
+    cta_form.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+}
+
+document.querySelector('.header-cta').addEventListener('click', scrolltoform)
+document.querySelector('.footer-cta').addEventListener('click', scrolltoform)
+document.querySelector('.cta-btn').addEventListener('click', scrolltoform)
+
+function scrolltoservices() {
+    let services = document.querySelector('.services-card')
+    services.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+}
+
+function scrolltoslider() {
+    let services = document.querySelector('.slider-group')
+    services.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+}
+
+let nav_buttons = document.querySelector('header').querySelector('nav').querySelectorAll('p')
+
+nav_buttons[0].addEventListener('click', scrolltoservices)
+nav_buttons[1].addEventListener('click', scrolltoslider)
+
+let footer_buttons = document.querySelector('.footer-menu').querySelectorAll('p')
+
+footer_buttons[0].addEventListener('click', scrolltoservices)
+footer_buttons[1].addEventListener('click', scrolltoform)
+</script>
+<!-- Adjust cover heading font size -->
+<script>
+let cover = document.querySelector('.cover')
+let cover_heading = cover.querySelector('h1')
+if (parseInt(getComputedStyle(cover_heading).width) >= parseInt(getComputedStyle(cover).width) - 128) {
+    let fontsize = parseInt(getComputedStyle(cover_heading).fontSize)
+    while (parseInt(getComputedStyle(cover_heading).width) >= parseInt(getComputedStyle(cover).width) - 64) {
+        cover_heading.style.fontSize = `${fontsize - 5}px`
+        fontsize -= 5
+    }
+    cover_heading.style.lineHeight = `${fontsize}px`
+}
+
+</script>
+<!-- Teams members switch buttons -->
+<script>
+let buttons = document.querySelectorAll('.team-controls-btn');
+let screen_width = window.innerWidth
+i = 0
+buttons.forEach(function(item) {
+    item.addEventListener('click', function() {
+        document.querySelector('.team-selected').classList.remove('team-selected')
+        this.classList.add('team-selected')
+        anime({
+            targets: '.team-grid',
+            translateX: - screen_width * (parseInt(item.innerHTML) - 1),
+            duration: 500,
+            easing: 'easeInOutQuad',
+        })
+    })
+    i += 1
+})
+</script>
+<!-- Slider script -->
+<script>
+// Загрузка картинок для корректной работы анимациии
+var amount_images = 5
+
+let loadedImages = 0
+let images_raw = []
+for (let i = 1; i <= amount_images; i++) {
+    images_raw.push(`${i}.webp`)
+}
+
+images_raw.forEach(image => {
+    let src = new Image()
+    src.src = `/static/images/slider/${image}`
+    src.onload = function() { loadedImages += 1 }
+})
+
+let timer = setInterval(function() {
+    if (loadedImages == images_raw.length) {
+        clearInterval(timer)
+        main()
+    }
+}, 10)
+
+// Весь функционал
+function main() {
+    let slider = document.querySelector('.slider')
+    let slider_images = slider.querySelectorAll('img')
+    let widths = []
+    let full_width = parseInt(getComputedStyle(document.querySelector('.slider')).width)
+
+    slider_images.forEach(function(image) {
+        widths.push(parseInt(getComputedStyle(image).width))
+    })
+
+    anime({
+        targets: '.slider',
+        translateX: (full_width - widths[0]) / 2,
+        duration: 100,
+        easing: 'linear'
+    })
+
+    
+
+    let ar_lt = document.querySelector('.ar-lt')
+    let ar_rt = document.querySelector('.ar-rt')
+
+    let current_image = 0
+    let default_offset = (full_width - widths[0]) / 2
+
+    ar_rt.addEventListener('click', function() {
+        if (current_image != amount_images) {
+            let distance = default_offset
+            for (let i = 0; i < current_image; i++) {
+                distance -= widths[i]
+            }
+            anime({
+                targets: '.slider',
+                translateX: distance - widths[current_image] / 2 - widths[current_image + 1] / 2,
+                easing: 'easeInOutQuad',
+                duration: 300
+            })
+            current_image += 1
+        }
+    })
+
+    ar_lt.addEventListener('click', function() {
+        if (current_image != 0) {
+            let distance = default_offset
+            for (let i = 0; i < current_image; i++) {
+                distance -= widths[i]
+            }
+            anime({
+                targets: '.slider',
+                translateX: distance + widths[current_image] / 2 + widths[current_image - 1] / 2,
+                easing: 'linear',
+                duration: 300
+            })
+            current_image -= 1
+        }
+    })
+
+    if (window.innerWidth <= 450) {
+        slider.addEventListener('touchstart', handleTouchStart, false);        
+        slider.addEventListener('touchmove', handleTouchMove, false);
+
+        let xDown = null;                                                        
+        let yDown = null;
+
+        function getTouches(evt) {
+        return evt.touches ||             // browser API
+                evt.originalEvent.touches; // jQuery
+        }                                                     
+                                                                                
+        function handleTouchStart(evt) {
+            const firstTouch = getTouches(evt)[0];                                      
+            xDown = firstTouch.clientX;                                      
+            yDown = firstTouch.clientY;                                      
+        };                                                
+                                                                                
+        function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+                return;
+            }
+
+            var xUp = evt.touches[0].clientX;                                    
+            var yUp = evt.touches[0].clientY;
+
+            var xDiff = xDown - xUp;
+            var yDiff = yDown - yUp;
+                                                                                
+            if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                if ( xDiff > 0 ) {
+                    if (current_image != amount_images) {
+                        let distance = default_offset
+                        for (let i = 0; i < current_image; i++) {
+                            distance -= widths[i]
+                        }
+                        anime({
+                            targets: '.slider',
+                            translateX: distance - widths[current_image] / 2 - widths[current_image + 1] / 2,
+                            easing: 'easeInOutQuad',
+                            duration: 300
+                        })
+                        current_image += 1
+                    }
+                } else {
+                    if (current_image != 0) {
+                        let distance = default_offset
+                        for (let i = 0; i < current_image; i++) {
+                            distance -= widths[i]
+                        }
+                        anime({
+                            targets: '.slider',
+                            translateX: distance + widths[current_image] / 2 + widths[current_image - 1] / 2,
+                            easing: 'linear',
+                            duration: 300
+                        })
+                        current_image -= 1
+                    }
+                }                       
+            }
+            /* reset values */
+            xDown = null;
+            yDown = null;                                             
+        };
+    }
+}
+</script>
+<!-- Popup window -->
+<script>
+    let id_to_description = {
+        's1': '<p>— это единственный способ, заранее оценить и получить полное видение  об проектируемом доме. На этом этапе планируется вид дома, определяются его формы, архитектурный стиль, внутреннее устройство и внешний облик дома. Этот этап позволяет избежать многих сложностей в ходе дальнейшего проектирования.</p><p>На основе разработанной концепции здания и точно сформированного технического задания производится дальнейшая отработка планов в полном объеме в рамках архитектурного или строительного проекта.</p>',
+        's2': '<p>— это часть комплекса работ по проектированию, направленная на создание документации, нужной для строительства или реконструкции объекта. Данный раздел решает следующие основные задачи:</p><ul><li>Детальная проработка внешнего вида объекта;</li><li>Выбор подходящих вариантов наружной и внутренней отделки фасадов и помещений;</li><li>Разработка планировочных, функциональных и организационных решений.</li></ul>',
+        's3': '<p>позволяют ответить на вопрос, каким образом необходимо построить новое здание, чтобы оно отвечало требованиям безопасности, прочности и комфорта при эксплуатации.</p><p>В основе подготовки раздела КП лежат точные инженерные расчеты, выполняемые при задействовании совершенного программного обеспечения.</p>',
+        's4': '<p>— это процесс создания трехмерной модели пространства при помощи формы и цвета. Фотореалистичная 3D-картинка покажет, как сочетаются между собой материалы, мебель и декор.</p><p>Визуализация дизайн-проекта позволяет понять, как будет выглядеть ваш дом после окончания ремонтных работ и какого результата добиваться от подрядчиков.</p>',
+        's5': '<p>Вы обретаете четкое понимание того, каким должен быть идеальный дом. Обеспечиваете гармоничность и практичность интерьера навсегда.</p>',
+        's6': '<p>Чтобы  сэкономить ваши деньги, необходим авторский надзор для контроля воплощения проекта во время строительства.',
+    }
+    let popup_container = document.querySelector('.popup-container')
+    let popup = document.querySelector('.popup')
+    let popup1 = document.querySelector('.popup1')
+    let services = document.querySelectorAll('.service')
+    services.forEach(function(service) {
+        let service_id = service.getAttribute('id')
+        let service_name = service.querySelector('h3').innerHTML
+        let service_description = id_to_description[service_id]
+        service.addEventListener('click', function() {
+            popup.style.display = 'flex'
+            popup1.style.display = 'none'
+            popup.querySelector('h1').innerHTML = service_name
+            popup.querySelector('.popup-text').innerHTML = service_description
+            popup_container.style.display = 'flex'
+            anime({
+                targets: popup_container,
+                opacity: 1,
+                easing: 'easeInOutQuad',
+                duration: 500,
+            })
+        })
+    })
+    
+    let slider_btn = document.querySelector('.slider-btn')
+    slider_btn.addEventListener('click', function() {
+        popup.style.display = 'none'
+        popup1.style.display = 'flex'
+        popup_container.style.display = 'flex'
+        anime({
+            targets: popup_container,
+            opacity: 1,
+            easing: 'easeInOutQuad',
+            duration: 500,
+        })
+    })
+
+    popup_container.addEventListener('click', function(e) {
+        if (e.target !== this) {
+            return
+        }
+        anime({
+            targets: popup_container,
+            opacity: 0,
+            easing: 'easeInOutQuad',
+            duration: 200,
+            complete: function() {
+                popup_container.style.display = 'none'
+            }
+        })
+    })
+
+    document.querySelector('.close').addEventListener('click', function() {
+        anime({
+            targets: popup_container,
+            opacity: 0,
+            easing: 'easeInOutQuad',
+            duration: 200,
+            complete: function() {
+                popup_container.style.display = 'none'
+            }
+        })
+    })
+
+    document.querySelector('.close1').addEventListener('click', function() {
+        anime({
+            targets: popup_container,
+            opacity: 0,
+            easing: 'easeInOutQuad',
+            duration: 200,
+            complete: function() {
+                popup_container.style.display = 'none'
+            }
+        })
+    })
+
+    document.addEventListener('keydown', function(e) {
+        if (event.key == 'Escape') {
+            anime({
+                targets: popup_container,
+                opacity: 0,
+                easing: 'easeInOutQuad',
+                duration: 200,
+                complete: function() {
+                    popup_container.style.display = 'none'
+                }
+            }) 
+        }
+    })
+</script>
+
+<!-- Work script -->
+<script>
+
+let leaf_id_to_description = {
+    'l1': '<p>Анализ всего участка подразумевает то-то и то-то lorem ispum lorem ispum lorem ispum lorem ispum</p>',
+    'l2': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti debitis labore repellendus excepturi similique expedita sapiente recusandae. Dolores quod aperiam id sequi ex consequuntur quos totam accusantium provident inventore.',
+    'l3': '',
+    'l4': '',
+}
+let leaves = document.querySelectorAll('.leaf')
+let i = 0
+let leaf_height = parseInt(getComputedStyle(document.querySelector('.leaf-cover')).height)
+
+if (window.innerWidth <= 600) {
+    for (let i = 0; i < 4; i++) {
+        let leaf = leaves[i]
+        leaf.querySelector('.leaf-content').innerHTML = leaf_id_to_description[leaf.getAttribute('id')]
+        let leaf_max_height = parseInt(getComputedStyle(leaf).height)
+        leaf.style.height = `${parseInt(getComputedStyle(leaf.querySelector('.leaf-cover')).height)}px`
+        leaf.addEventListener('click', function() {
+            if (leaf.getAttribute('data-toggled') == 0) {
+                anime({
+                    targets: leaf,
+                    height: leaf_max_height,
+                    duration: 300,
+                    easing: 'linear',
+                })
+                for (j = 0; j < 4; j++) {
+                    if (leaves[j].dataset.toggled == 1) {
+                        anime({
+                            targets: leaves[j],
+                            height: parseInt(getComputedStyle(leaves[j].querySelector('.leaf-cover')).height),
+                            duration: 300,
+                            easing: 'linear',
+                        })
+                        leaves[j].dataset.toggled = 0
+                    }
+                }
+                leaf.dataset.toggled = 1
+            } else {
+                anime({
+                    targets: leaf,
+                    height: parseInt(getComputedStyle(leaf.querySelector('.leaf-cover')).height),
+                    duration: 300,
+                    easing: 'linear',
+                })
+                leaf.dataset.toggled = 0
+            }
+        })
+    }
+} else {
+    leaves.forEach(function(item) {
+        item.querySelector('.leaf-content').innerHTML = leaf_id_to_description[item.getAttribute('id')]
+        item.querySelector('img').addEventListener('click', function() {
+            popup.querySelector('h1').innerHTML = item.querySelector('.leaf-cover').querySelector('p').innerHTML
+            popup.querySelector('.popup-text').innerHTML = item.querySelector('.leaf-content').innerHTML
+            popup_container.style.display = 'flex'
+            anime({
+                targets: popup_container,
+                opacity: 1,
+                easing: 'easeInOutQuad',
+                duration: 500,
+            })
+        })
+    })
+}
+</script>
+
+</body>
+</html>
