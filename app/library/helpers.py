@@ -41,3 +41,15 @@ async def get_all_queries():
             result = await conn.fetch('SELECT * FROM queries')
 
     return list(map(tuple, result))
+
+async def get_csv_feedback():
+    feedback = await get_all_queries()
+    feedback.insert(0, (
+        'Имя',
+        'Контакт',
+        'Сообщение',
+        'Способ связи'
+        ))
+    with open("queries.csv", 'w') as csv_file:
+        writer = csv.writer(csv_file, dialect = 'excel')
+        writer.writerows(feedback)

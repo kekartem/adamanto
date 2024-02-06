@@ -15,10 +15,10 @@
 <header>
     <div class="logo-location-group">
         <div class="logo-group">
-            <img src="/static/images/logo.webp" alt="">
+            <img src="{{ url_for('static', path='images/logo.webp') }}" alt="">
         </div>
         <div class="location">
-            <img src="/static/images/map-pin.webp" alt="">
+            <img src="{{ url_for('static', path='images/map-pin.webp') }}" alt="">
             <p>г. Казань</p>
         </div>
     </div>
@@ -29,7 +29,7 @@
     </nav>
     <div class="profile-group">
         <div class="phone-group">
-            <img src="/static/images/phone.webp" alt="">
+            <img src="{{ url_for('static', path='images/phone.webp') }}" alt="">
             <p>+7 919 634-12-19</p>
         </div>
     </div>
@@ -65,8 +65,8 @@
                         <p>Газобетон (ячеистый бетон) сегодня считается одним из самых популярных строительных материалов, которые используют на рынке загородного жилья.</p>
                     </div>
                     <div class="tech-learn-more">
-                        <a href="/tech?id=1"><h4>Смотреть примеры</h4>
-                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                        <a href="/tech/1"><h4>Смотреть примеры</h4>
+                        <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -78,8 +78,8 @@
                         <p>Дома из кирпича — это живая классика, символ надежности и долговечности. Это хорошая инвестиция в недвижимость.</p>
                     </div>
                     <div class="tech-learn-more">
-                        <a href="/tech?id=2"><h4>Смотреть примеры</h4>
-                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                        <a href="/tech/2"><h4>Смотреть примеры</h4>
+                        <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@
                         <p>Для ценителей природы и натуральных материалов. Самая популярная и традиционная технология для нашего климата.</p>
                     </div>
                     <div class="tech-learn-more">
-                        <a href="/tech?id=3"><h4>Смотреть примеры</h4>
-                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                        <a href="/tech/3"><h4>Смотреть примеры</h4>
+                        <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -104,8 +104,8 @@
                         <p>Каркасные дома одни из самых популярных на рынке загородного жилья. Основное преимущество каркасников — скорость и доступность строительства.</p>
                     </div>
                     <div class="tech-learn-more">
-                        <a href="/tech?id=3"><h4>Смотреть примеры</h4>
-                        <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                        <a href="/tech/4"><h4>Смотреть примеры</h4>
+                        <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -116,27 +116,27 @@
         <h1>Проектируйте с нами</h1>
         <div class="cards">
             <div class="card card1">
-                <img src="/static/images/monitor.webp" alt="">
+                <img src="{{ url_for('static', path='images/monitor.webp') }}" alt="">
                 <h2>Опыт работы в проектировании более 15 лет</h2>
                 <p>Спроектировано и построено более 100 домов.</p>
             </div>
             <div class="card card2">
-                <img src="/static/images/interview.webp" alt="">
+                <img src="{{ url_for('static', path='images/interview.webp') }}" alt="">
                 <h2>Интервью с заказчиком</h2>
                 <p>Для подробного изучения ваших желаний.</p>
             </div>
             <div class="card card3">
-                <img src="/static/images/map-pin.webp" alt="">
+                <img src="{{ url_for('static', path='images/map-pin.webp') }}" alt="">
                 <h2>Подробный анализ вашего участка</h2>
                 <p>Климатическое обоснование для выбора строительной технологии</p>
             </div>
             <div class="card card4">
-                <img src="/static/images/visual.webp" alt="">
+                <img src="{{ url_for('static', path='images/visual.webp') }}" alt="">
                 <h2>Профессиональноe выполнение работы с визуализацией</h2>
                 <p>От карандашного эскиза до полноценной проектной документацией с визуализацией.</p>
             </div>
             <div class="card card5">
-                <img src="/static/images/sketch.webp" alt="">
+                <img src="{{ url_for('static', path='images/sketch.webp') }}" alt="">
                 <h2>Сочетание строительного опыта с дизайнерским подходом</h2>
                 <p>Даёт возможность оптимального проектирования домов с учетом особенностей климата и соляризации участка, а так же определения точной сметной стоимости строительства.</p>
             </div>
@@ -145,15 +145,15 @@
     <section class="slider-group">
         <div class="slider-wrapper">
             <div class="slider">
-                <img src="/static/images/slider/1.webp" alt="">
-                <img src="/static/images/slider/2.webp" alt="">
-                <img src="/static/images/slider/3.webp" alt="">
-                <img src="/static/images/slider/4.webp" alt="">
-                <img src="/static/images/slider/5.webp" alt="">
+                <img src="{{ url_for('static', path='images/slider/1.webp') }}" alt="">
+                <img src="{{ url_for('static', path='images/slider/2.webp') }}" alt="">
+                <img src="{{ url_for('static', path='images/slider/3.webp') }}" alt="">
+                <img src="{{ url_for('static', path='images/slider/4.webp') }}" alt="">
+                <img src="{{ url_for('static', path='images/slider/5.webp') }}" alt="">
             </div>
             <div class="controls">
-                <div class="ar-lt"><img src="/static/images/slider/ar-lt.webp" alt=""></div>
-                <div class="ar-rt"><img src="/static/images/slider/ar-rt.webp" alt=""></div>
+                <div class="ar-lt"><img src="{{ url_for('static', path='images/slider/ar-lt.webp') }}" alt=""></div>
+                <div class="ar-rt"><img src="{{ url_for('static', path='images/slider/ar-rt.webp') }}" alt=""></div>
             </div>
             
         </div>
@@ -168,7 +168,7 @@
                 <p>250 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
             <div class="service" id="s2">
@@ -176,7 +176,7 @@
                 <p>800 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
             <div class="service" id="s3">
@@ -184,7 +184,7 @@
                 <p>1000 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
             <div class="service" id="s4">
@@ -192,7 +192,7 @@
                 <p>300 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
             <div class="service" id="s5">
@@ -200,7 +200,7 @@
                 <p>2500 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
             <div class="service" id="s6">
@@ -208,7 +208,7 @@
                 <p>1.5% от сметной стоимости материалов</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="/static/images/service-arrow-up-right.png" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
     </section>
     <section class="apply" id="apply">
         <div class="left">
-            <img src="/static/images/floating.webp" alt="">
+            <img src="{{ url_for('static', path='images/floating.webp') }}" alt="">
         </div>
         <div class="right">
             <div class="right-inner">
@@ -322,11 +322,11 @@
         <div class="popup">
             <h1>1</h1>
             <div class="popup-text"></div>
-            <div class="close"><img src="/static/images/cross.webp" alt=""></div>
+            <div class="close"><img src="{{ url_for('static', path='images/cross.webp') }}" alt=""></div>
         </div>
         <div class="popup1">
             <h2>Скачать каталог</h2>
-            <form class="main-apply-form" action="/getcatalog/" method="POST">
+            <form class="main-apply-form" action="/getcatalog" method="POST">
                 <input type="text" name="name" placeholder="Ваше имя" required>
                 <p>Куда вам удобно получить каталог?</p>
                 <div class="contact-option-row">
@@ -343,29 +343,29 @@
                     Отправить
                 </button>
             </form>
-            <div class="close1"><img src="/static/images/cross.webp" alt=""></div>
+            <div class="close1"><img src="{{ url_for('static', path='images/cross.webp') }}" alt=""></div>
         </div>
     </div>
 </main>
 <footer>
     <div class="footer-inner">
-        <div class="footer-img"><img src="/static/images/logo.webp" alt=""></div>
+        <div class="footer-img"><img src="{{ url_for('static', path='images/logo.webp') }}" alt=""></div>
         <div class="footer-menu">
             <div class="footer-cta">Заказать проект</div>
             <p>Услуги</p>
             <p>Каталог</p>
         </div>
         <div class="contact-group">
-            <p><img src="/static/images/mail.webp" alt="">avaaant.ru@gmail.com</p>
-            <p><img src="/static/images/phone.webp" alt="">+7 919 634-12-19</p>
-            <p><img src="/static/images/map-pin.webp" alt="">г. Казань</p>
+            <p><img src="{{ url_for('static', path='images/mail.webp') }}" alt="">avaaant.ru@gmail.com</p>
+            <p><img src="{{ url_for('static', path='images/phone.webp') }}" alt="">+7 919 634-12-19</p>
+            <p><img src="{{ url_for('static', path='images/map-pin.webp') }}" alt="">г. Казань</p>
         </div>
     </div>
     <div class="credits">
         Designed by <a href="https://t.me/k_volchihina" target="_blank">@k_volchihina</a> | Developed by <a href="https://t.me/kekartem" target="_blank">@kekartem</a>
     </div>
 </footer>
-<div class="aliya"><img src="/static/images/aliya.webp"></div>
+<div class="aliya"><img src="{{ url_for('static', path='images/aliya.webp') }}"></div>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
 <!-- Easter-egg -->
 <!-- Popup1 form -->

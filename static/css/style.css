@@ -119,7 +119,7 @@ main {
 
 .cover {
     width: 100%;
-    background: url(images/main-cover.webp);
+    background: url(../images/main-cover.webp);
     background-size: cover;
     border-radius: 40px;
     display: flex;
@@ -187,7 +187,7 @@ main {
     height: auto;
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
-    background: url(images/about.webp);
+    background: url(../images/about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -254,7 +254,7 @@ main {
     border-radius: 8px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    background: url('images/tech-wood.png');
+    background: url('../images/tech-wood.png');
     background-size: cover;
     background-position: center;
 }
@@ -498,24 +498,24 @@ main {
 }
 
 .leaf_1 .leaf-img-container {
-    background: url('images/work/1.webp');
+    background: url('../images/work/1.webp');
     background-size: cover;
     background-position: center;
 }
 
 .leaf_2 .leaf-img-container {
-    background: url('images/work/2.webp');
+    background: url('../images/work/2.webp');
     background-size: cover;
     background-position: center;
 }
 
 .leaf_3 .leaf-img-container {
-    background: url('images/work/3.webp');
+    background: url('../images/work/3.webp');
     background-size: cover;
     background-position: center;
 }
 .leaf_4 .leaf-img-container {
-    background: url('images/work/4.webp');
+    background: url('../images/work/4.webp');
     background-size: cover;
     background-position: center;
 }
@@ -648,7 +648,7 @@ main {
 }
 
 .team-card-1 {
-    background: url(images/team/1.webp);
+    background: url(../images/team/1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1013,7 +1013,7 @@ footer img {
 }
 
 .catalog-cover {
-    background: url(images/catalog-cover-bg.png);
+    background: url(../images/catalog-cover-bg.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1054,7 +1054,7 @@ footer img {
     aspect-ratio: 16 / 9;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    background: url(images/catalog-item.png);
+    background: url(../images/catalog-item.png);
     background-size: cover;
     background-position: center;
 }
@@ -1119,7 +1119,7 @@ footer img {
 .project-main-image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    background: url(images/tech/tech1/1.png);
+    background: url(../images/tech/tech1/1.png);
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -1521,7 +1521,7 @@ footer img {
     }
 
     .leaf_1 {
-        background: url(images/work/1.webp);
+        background: url(../images/work/1.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1530,7 +1530,7 @@ footer img {
     }
 
     .leaf_2 {
-        background: url(images/work/2.webp);
+        background: url(../images/work/2.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1540,7 +1540,7 @@ footer img {
 
     .leaf_3 {
         background-position: center;
-        background: url(images/work/3.webp);
+        background: url(../images/work/3.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1549,7 +1549,7 @@ footer img {
     }
 
     .leaf_4 {
-        background: url(images/work/4.webp);
+        background: url(../images/work/4.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
