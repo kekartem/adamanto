@@ -68,35 +68,54 @@
 <section class="tech tech-single">
     <div class="tech-cards">
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="{{ url_for('static', path='/images/tech/tech1/cover.jpg') }}" alt=""></div>
+            <div class="tech-card-img-container tech1"></div>
             <div class="tech-description">
-                <h3>Деревянные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Дома из газобетона</h3>
+                    <p>Газобетон (ячеистый бетон) сегодня считается одним из самых популярных строительных материалов, которые используют на рынке загородного жилья.</p>
+                </div>
                 <div class="tech-learn-more">
                     <a href="/tech/1"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="/static/images/tech-wood.png" alt=""></div>
+            <div class="tech-card-img-container tech2"></div>
             <div class="tech-description">
-                <h3>Каменные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Кирпичные дома</h3>
+                    <p>Дома из кирпича — это живая классика, символ надежности и долговечности. Это хорошая инвестиция в недвижимость.</p>
+                </div>
                 <div class="tech-learn-more">
-                    <a href="/tech?id=2"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <a href="/tech/2"><h4>Смотреть примеры</h4>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="/static/images/tech-wood.png" alt=""></div>
+            <div class="tech-card-img-container tech3"></div>
             <div class="tech-description">
-                <h3>Кирпичные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Дома из клееного бруса и оцилиндрованного бревна</h3>
+                    <p>Для ценителей природы и натуральных материалов. Самая популярная и традиционная технология для нашего климата.</p>
+                </div>
                 <div class="tech-learn-more">
-                    <a href="/tech?id=3"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <a href="/tech/3"><h4>Смотреть примеры</h4>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="tech-card">
+            <div class="tech-card-img-container tech4"></div>
+            <div class="tech-description">
+                <div class="tech-description-caption">
+                    <h3>Каркасные дома</h3>
+                    <p>Каркасные дома одни из самых популярных на рынке загородного жилья. Основное преимущество каркасников — скорость и доступность строительства.</p>
+                </div>
+                <div class="tech-learn-more">
+                    <a href="/tech/4"><h4>Смотреть примеры</h4>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
@@ -154,10 +173,24 @@ images_small.forEach(function(item) {
     item.addEventListener('click', function() {
         document.querySelector('.selected').classList.remove('selected')
         item.classList.add('selected')
-        main_image = document.querySelector('.project-main-image')
-        main_image.style.background = getComputedStyle(item).background;
-        main_image.style.backgroundSize = 'cover'
-        main_image.style.backgroundPosition = 'center'
+        anime({
+            targets: main_image,
+            opacity: 0,
+            duration: 200,
+            easing: 'easeInOutQuad',
+            complete: function() {
+                main_image.style.background = getComputedStyle(item).background;
+                main_image.style.backgroundSize = 'cover'
+                main_image.style.backgroundPosition = 'center'
+                anime({
+                    targets: main_image,
+                    opacity: 1,
+                    duration: 200,
+                    easing: 'easeInOutQuad'
+                })
+            }
+        })
+
     })
     item.style.background = `url(${images_names[i]})`
     item.style.backgroundSize = 'cover'

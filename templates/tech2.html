@@ -36,17 +36,19 @@
 <section class="project-overview">
     <div class="project-images">
         <div class="project-main-image"></div>
-        <div class="project-images-row">
-            <div class="project-images-row-item selected"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
-            <div class="project-images-row-item"></div>
+        <div class="project-images-row-wrapper">
+            <div class="project-images-row">
+                <div class="project-images-row-item selected"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+                <div class="project-images-row-item"></div>
+            </div>
         </div>
     </div>
     <div class="project-description">
@@ -158,10 +160,23 @@ images_small.forEach(function(item) {
     item.addEventListener('click', function() {
         document.querySelector('.selected').classList.remove('selected')
         item.classList.add('selected')
-        main_image = document.querySelector('.project-main-image')
-        main_image.style.background = getComputedStyle(item).background;
-        main_image.style.backgroundSize = 'cover'
-        main_image.style.backgroundPosition = 'center'
+        anime({
+            targets: main_image,
+            opacity: 0.5,
+            duration: 100,
+            easing: 'easeInOutQuad',
+            complete: function() {
+                main_image.style.background = getComputedStyle(item).background;
+                main_image.style.backgroundSize = 'cover'
+                main_image.style.backgroundPosition = 'center'
+                anime({
+                    targets: main_image,
+                    opacity: 1,
+                    duration: 100,
+                    easing: 'easeInOutQuad'
+                })
+            }
+        })
     })
     item.style.background = `url(${images_names[i]})`
     item.style.backgroundSize = 'cover'

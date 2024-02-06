@@ -1237,6 +1237,10 @@ footer img {
         margin-left: -64px;
         padding-left: 64px;
     }
+
+    .project-overview {
+        padding: 32px 32px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1258,6 +1262,10 @@ footer img {
 
     .tech-cards {
         gap: 10px;
+    }
+
+    .tech-single .tech-cards {
+        padding: 0 32px
     }
 
     .adv {
@@ -1301,6 +1309,16 @@ footer img {
     .tech-heading {
         margin-left: -32px;
         padding-left: 32px;
+    }
+
+    .project-overview {
+        grid-template-rows: repeat(auto, 2);
+        grid-template-columns: 1fr;
+    }
+
+    .project-images {
+        width: 75%;
+        justify-self: center
     }
 
 }
@@ -1347,6 +1365,10 @@ footer img {
         grid-template-rows: auto;
     }
 
+    .project-images {
+        width: 80%;
+        justify-self: center
+    }
 }
 
 
@@ -1409,6 +1431,10 @@ footer img {
     .slider-btn {
         margin-top: 16px;
     }
+    .project-images {
+        width: 85%;
+        justify-self: center
+    }
 
 }
 
@@ -1470,6 +1496,24 @@ footer img {
         padding: 0;
         box-sizing: border-box;
         border-radius: 10px;
+    }
+
+    .project-images {
+        width: 100%;
+    }
+
+    .project-images-row-wrapper {
+        overflow-y: scroll;
+    }
+
+    .project-images-row {
+        flex-wrap: nowrap;
+        min-height: 48px;
+    }
+
+    .project-images-row-item {
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
     }
 }
 
