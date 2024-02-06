@@ -16,7 +16,7 @@ async def init_db():
         user=config['database']['username'],
         password=config['database']['password'],
         port=config['database']['port_id'])
-    conn = await POOL.acquire()
+    
     async with POOL.acquire() as conn:
         async with conn.transaction():
             await conn.execute('''CREATE TABLE IF NOT EXISTS queries(

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1800, initial-scale=10">
     <title>AVANT | Архитектурное бюро</title>
-    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
     <script>
         if (parseInt(window.innerWidth) < 1800) {
             document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
