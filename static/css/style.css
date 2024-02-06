@@ -254,7 +254,28 @@ main {
     border-radius: 8px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    background: url('../images/tech-wood.png');
+}
+
+.tech1 {
+    background: url('../images/tech/tech1/cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tech2 {
+    background: url('../images/tech/tech2/cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tech3 {
+    background: url('../images/tech/tech3/cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tech4 {
+    background: url('../images/tech/tech4/cover.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1100,7 +1121,13 @@ footer img {
 
 .project-description p {
     font-size: .9em;
-    margin: 1em 0;
+    margin: .8em 0;
+}
+
+.project-description ul {
+    font-size: .9em;
+    padding-left: 2em;
+    box-sizing: border-box;
 }
 
 .project-description-btn {
@@ -1114,14 +1141,12 @@ footer img {
     justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
+    margin-top: 1em;
 }
 
 .project-main-image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    background: url(../images/tech/tech1/1.png);
-    background-size: cover;
-    background-position: center;
     border-radius: 8px;
     box-shadow: 4px 4px 15px 0px #00000033;
 }

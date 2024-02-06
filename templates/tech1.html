@@ -15,10 +15,10 @@
 <header class="catalog-header">
     <div class="logo-location-group">
         <div class="logo-group">
-            <img src="/static/images/logo.webp" alt="">
+            <img src="{{ url_for('static', path='/images/logo.webp') }}" alt="">
         </div>
         <div class="location">
-            <img src="/static/images/map-pin.webp" alt="">
+            <img src="{{ url_for('static', path='/images/map-pin.webp') }}" alt="">
             <p>г. Казань</p>
         </div>
     </div>
@@ -27,7 +27,7 @@
     </nav>
     <div class="profile-group">
         <div class="phone-group">
-            <img src="/static/images/phone.webp" alt="">
+            <img src="{{ url_for('static', path='/images/phone.webp') }}" alt="">
             <p>+7 919 634-12-19</p>
         </div>
     </div>
@@ -40,23 +40,40 @@
             <div class="project-images-row-item selected"></div>
             <div class="project-images-row-item"></div>
             <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
         </div>
     </div>
     <div class="project-description">
-        <h1>Деревянные дома</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo cupiditate numquam voluptate officiis neque consectetur excepturi amet harum porro ex natus totam, ipsam nisi atque tenetur, temporibus, illum quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo cupiditate numquam voluptate officiis neque consectetur excepturi amet harum porro ex natus totam, ipsam nisi atque tenetur, temporibus, illum quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo cupiditate numquam voluptate officiis neque consectetur excepturi amet harum porro ex natus totam, ipsam nisi atque tenetur, temporibus, illum quibusdam.</p>
+        <h1>Дома из газобетона</h1>
+        <p>Газобетон — разновидность ячеистого бетона, изготавливаемая с применением газообразователей. Свою прочность он набирает в автоклаве под воздействием высокого давления и парообработки. По способу порообразования ячеистые бетоны делятся на пенобетоны и газобетоны. В одном материале для создания ячеистой структуры применяется химическая пена, а в другом — газ.</p>
+        <p>Особенностью кладки из газобетонных блоков являются тонкие швы (2-3 мм). Благодаря этому повышается энергоэффективность ограждающей стены.</p>
+        <p>Преимущества данной технологии:</p>
+        <ul>
+            <li>Теплоэффективность</li>
+            <li>Относительная дешевизна по сравнению с другими технологиями</li>
+            <li>Простота исполнения</li>
+            <li>Простота расчета воздействий нагрузок</li>
+            <li>Возможность использовать все виды отделочных материалов: клинкерный кирпич, фасадная плитка, отделка деревом, навесные вентилируемые фасады, все фасадные декоративные штукатурки.</li>
+        </ul>
+        
         <div class="project-description-btn">Заказать проект</div>
     </div>
 </section>
 <section class="tech tech-single">
     <div class="tech-cards">
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="/static/images/tech-wood.png" alt=""></div>
+            <div class="tech-card-img-container"><img src="{{ url_for('static', path='/images/tech/tech1/cover.jpg') }}" alt=""></div>
             <div class="tech-description">
                 <h3>Деревянные дома</h3>
                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                 <div class="tech-learn-more">
-                    <a href="/tech?id=1"><h4>Смотреть примеры</h4>
+                    <a href="/tech/1"><h4>Смотреть примеры</h4>
                     <img src="/static/images/arrow-right-tech.png" alt=""></a>
                 </div>
             </div>
@@ -122,14 +139,22 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
 <script>
+let main_image = document.querySelector('.project-main-image')
+main_image.style.background = "url({{ url_for('static', path='/images/tech/tech1/1.jpg') }})"
+main_image.style.backgroundSize = 'cover'
+main_image.style.backgroundPosition = 'center'
+
 let images_small = document.querySelectorAll('.project-images-row-item')
-let images_names = ['/static/images/tech/tech1/1.png', '/static/images/tech/tech1/2.png', '/static/images/tech/tech1/3.webp']
+let images_names = []
+for (let i = 0; i < 10; i++) {
+    images_names.push(`{{ url_for('static', path='/images/tech/tech1/${i+1}.jpg') }}`)
+}
 let i = 0
 images_small.forEach(function(item) {
     item.addEventListener('click', function() {
         document.querySelector('.selected').classList.remove('selected')
         item.classList.add('selected')
-        let main_image = document.querySelector('.project-main-image')
+        main_image = document.querySelector('.project-main-image')
         main_image.style.background = getComputedStyle(item).background;
         main_image.style.backgroundSize = 'cover'
         main_image.style.backgroundPosition = 'center'
