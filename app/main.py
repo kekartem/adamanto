@@ -36,7 +36,7 @@ from fastapi.templating import Jinja2Templates
 import starlette.status as status
 from .library.helpers import *
 
-app = FastAPI(debug=True, ssl_keyfile="app/adamanto.pro.key", ssl_certfile="app/certificate_ca.srt")
+app = FastAPI(debug=True, ssl_keyfile="app/adamanto.pro.key", ssl_certfile="app/certificate_ca.crt")
 
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
