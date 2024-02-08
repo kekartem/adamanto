@@ -1192,6 +1192,7 @@ footer img {
     display: flex;
     gap: 8px;
     width: 100%;
+    background: red;
 }
 
 .project-images-row-item {
@@ -1458,9 +1459,13 @@ footer img {
 
     .popup {
         width: 90vw;
-        max-height: 90vh;
+        max-height: 80vh;
         overflow: scroll;
         justify-content: flex-start;
+    }
+
+    .project-images-row-item {
+        width: 10%;
     }
 }
 
@@ -1608,18 +1613,25 @@ footer img {
     }
 
     .project-images-row-wrapper {
-        overflow-y: scroll;
+        overflow-x: scroll;
     }
 
     .project-images-row {
         flex-wrap: nowrap;
         min-height: 48px;
+        overflow: scroll;
+        width: 100%;
     }
 
     .project-images-row-item {
         aspect-ratio: 1 / 1;
         flex-shrink: 0;
         flex-grow: 0;
+        min-height: 32px;
+    }
+
+    .project-images-row-item {
+        width: 12%;
     }
 }
 
@@ -1948,6 +1960,10 @@ footer img {
     .popup h1 {
         font-size: 1.5em;
     }
+
+    .project-images-row-item {
+        width: 15%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -2028,10 +2044,11 @@ footer img {
         display: none;
     }
 
-    .popup
+    .popup,
     .popup1 {
         font-size: .8em;
         width: 90%;
+        padding: 16px;
     }
 
     .popup1 form .main-apply-form-btn {
@@ -2039,4 +2056,10 @@ footer img {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .footer-cta {
+        padding: 1em;
+    }
+
+
 }
