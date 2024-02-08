@@ -141,6 +141,11 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
 <script>
+    let btnsfooter = document.querySelector('.footer-menu').querySelectorAll('p')
+    btnsfooter[0].addEventListener('click', function() { window.location.href = '/#tech' })
+    btnsfooter[1].addEventListener('click', function() { window.location.href = '/#apply' })
+</script>
+<script>
     document.querySelector('.logo-group').addEventListener('click', function() {
         window.location.href = '/'
     })
