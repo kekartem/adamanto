@@ -1192,7 +1192,6 @@ footer img {
     display: flex;
     gap: 8px;
     width: 100%;
-    background: red;
 }
 
 .project-images-row-item {
@@ -1977,6 +1976,22 @@ footer img {
 
     .service {
         font-size: .8em
+    }
+
+    .project-images-row {
+        gap: 0;
+    }
+
+    .project-images-row-item {
+        margin-left: 8px;
+    }
+
+    .project-images-row-item:first-of-type {
+        margin: 0;
+    }
+
+    .tech-single .tech-cards {
+        padding: 8px;
     }
 }
 
