@@ -68,19 +68,6 @@
 <section class="tech tech-single">
     <div class="tech-cards">
         <div class="tech-card">
-            <div class="tech-card-img-container tech1"></div>
-            <div class="tech-description">
-                <div class="tech-description-caption">
-                    <h3>Дома из газобетона</h3>
-                    <p>Газобетон (ячеистый бетон) сегодня считается одним из самых популярных строительных материалов, которые используют на рынке загородного жилья.</p>
-                </div>
-                <div class="tech-learn-more">
-                    <a href="/tech/1"><h4>Смотреть примеры</h4>
-                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="tech-card">
             <div class="tech-card-img-container tech2"></div>
             <div class="tech-description">
                 <div class="tech-description-caption">
@@ -97,8 +84,8 @@
             <div class="tech-card-img-container tech3"></div>
             <div class="tech-description">
                 <div class="tech-description-caption">
-                    <h3>Дома из клееного бруса и оцилиндрованного бревна</h3>
-                    <p>Для ценителей природы и натуральных материалов. Самая популярная и традиционная технология для нашего климата.</p>
+                    <h3>Деревянные дома</h3>
+                    <p>Для ценителей природы и натуральных материалов. Популярная и традиционная технология для нашего климата.</p>
                 </div>
                 <div class="tech-learn-more">
                     <a href="/tech/3"><h4>Смотреть примеры</h4>
@@ -111,7 +98,7 @@
             <div class="tech-description">
                 <div class="tech-description-caption">
                     <h3>Каркасные дома</h3>
-                    <p>Каркасные дома одни из самых популярных на рынке загородного жилья. Основное преимущество каркасников — скорость и доступность строительства.</p>
+                    <p>Каркасные дома набирают популярность на рынке загородного жилья, благодаря своему главному преимуществу – скорости и доступности строительства.</p>
                 </div>
                 <div class="tech-learn-more">
                     <a href="/tech/4"><h4>Смотреть примеры</h4>
@@ -157,6 +144,11 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<script>
+    document.querySelector('.logo-group').addEventListener('click', function() {
+        window.location.href = '/'
+    })
+</script>
 <script>
 let main_image = document.querySelector('.project-main-image')
 main_image.style.background = "url({{ url_for('static', path='/images/tech/tech1/1.jpg') }})"

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1800, initial-scale=10">
-    <title>AVANT | Архитектурное бюро</title>
+    <title>ADAMANTO | Архитектурное бюро</title>
     <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
     <script>
         if (parseInt(window.innerWidth) < 1800) {
@@ -62,7 +62,7 @@
                 <div class="tech-description">
                     <div class="tech-description-caption">
                         <h3>Дома из газобетона</h3>
-                        <p>Газобетон (ячеистый бетон) сегодня считается одним из самых популярных строительных материалов, которые используют на рынке загородного жилья.</p>
+                        <p>Газобетон – один из самых популярных строительных материалов на сегодняшний день. Он позволяет с легкостью воплощать в жизнь всевозможные современные архитектурные формы.</p>
                     </div>
                     <div class="tech-learn-more">
                         <a href="/tech/1"><h4>Смотреть примеры</h4>
@@ -75,7 +75,7 @@
                 <div class="tech-description">
                     <div class="tech-description-caption">
                         <h3>Кирпичные дома</h3>
-                        <p>Дома из кирпича — это живая классика, символ надежности и долговечности. Это хорошая инвестиция в недвижимость.</p>
+                        <p>Для ценителей природы и натуральных материалов. Популярная и традиционная технология для нашего климата.</p>
                     </div>
                     <div class="tech-learn-more">
                         <a href="/tech/2"><h4>Смотреть примеры</h4>
@@ -87,8 +87,8 @@
                 <div class="tech-card-img-container tech3"></div>
                 <div class="tech-description">
                     <div class="tech-description-caption">
-                        <h3>Дома из клееного бруса и оцилиндрованного бревна</h3>
-                        <p>Для ценителей природы и натуральных материалов. Самая популярная и традиционная технология для нашего климата.</p>
+                        <h3>Деревянные дома</h3>
+                        <p>Для ценителей природы и натуральных материалов. Популярная и традиционная технология для нашего климата.</p>
                     </div>
                     <div class="tech-learn-more">
                         <a href="/tech/3"><h4>Смотреть примеры</h4>
@@ -101,7 +101,7 @@
                 <div class="tech-description">
                     <div class="tech-description-caption">
                         <h3>Каркасные дома</h3>
-                        <p>Каркасные дома одни из самых популярных на рынке загородного жилья. Основное преимущество каркасников — скорость и доступность строительства.</p>
+                        <p>Каркасные дома набирают популярность на рынке загородного жилья, благодаря своему главному преимуществу – скорости и доступности строительства.</p>
                     </div>
                     <div class="tech-learn-more">
                         <a href="/tech/4"><h4>Смотреть примеры</h4>
@@ -163,52 +163,45 @@
     <section class="services">
         <h1>Ценности ADAMANTO</h1>
         <div class="services-card">
-            <div class="service" id="s1">
-                <h3>Эскизное проектирование</h3>
-                <p>250 ₽/ м²</p>
+            <div class="service s1" id="s1">
+                <h3>Эскизное проектирование & 3D-визуализация</h3>
+                <p class="service-description-3d">Эскизник важен для проработки дизайна дома. Мы также создаем 3D-визуализацию каждой комнаты в виде видео-облета.</p>
+                <p>500 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.png') }}" alt="">
                 </div>
             </div>
-            <div class="service" id="s2">
+            <div class="service s2" id="s2">
                 <h3>Архитектурное решение</h3>
                 <p>800 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.png') }}" alt="">
                 </div>
             </div>
-            <div class="service" id="s3">
+            <div class="service s3" id="s3">
                 <h3>Конструктивные решения</h3>
                 <p>1000 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.png') }}" alt="">
                 </div>
             </div>
-            <div class="service" id="s4">
-                <h3>3D-визуализация</h3>
-                <p>300 ₽/ м²</p>
-                <div class="service-learn-more">
-                    <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
-                </div>
-            </div>
-            <div class="service" id="s5">
+            <div class="service s4" id="s4">
                 <h3>Интерьерное решение</h3>
                 <p>2500 ₽/ м²</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.png') }}" alt="">
                 </div>
             </div>
-            <div class="service" id="s6">
+            <div class="service s5" id="s5">
                 <h3>Контроль и сопровождение</h3>
                 <p>1.5% от сметной стоимости материалов</p>
                 <div class="service-learn-more">
                     <p>Узнать больше</p>
-                    <img src="{{ url_for('static', path='images/service-arrow-up-right.webp') }}" alt="">
+                    <img src="{{ url_for('static', path='images/service-arrow-up-right.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -221,18 +214,18 @@
                     <h1>№ 1</h1>
                     <div class="leaf-img-container">
                     </div>
-                    <p>Анализ всего участка</p>
+                    <p>Исследование и сборданных об участке</p>
                 </div>
-                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+                <div class="leaf-content">Сбор данных об участке, таких как соляризация участка, роза ветров (среднегодовое направление силы ветра по месяцам), среднемесячная температура, количество дней отопительного периода, подъездные пути, движение поверхностных вод (весна/осень). Для изучения геодезического плана и исследования участка (несущая способность грунта, уровень грунтовых вод) необходима справка ГПЗУ. На основании этих данных определяем возможные технологии строительства на данном участке.</div>
             </div>
             <div class="leaf leaf_2" id="l2" data-toggled="0">
                 <div class="leaf-cover">
                     <h1>№ 2</h1>
                     <div class="leaf-img-container">
                     </div>
-                    <p>Анализ геологического исследования</p>
+                    <p>Интервью с человеком</p>
                 </div>
-                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+                <div class="leaf-content">Изучение социального портрета заказчика, определение внешнего вида будущего дома, его этажности и площади.</div>
             
             </div>
             <div class="leaf leaf_3" id="l3" data-toggled="0">
@@ -240,18 +233,18 @@
                     <h1>№ 3</h1>
                     <div class="leaf-img-container">
                     </div>
-                    <p>Подбор технологии строительства и площади здания</p>
+                    <p>Эксиз для заказчика</p>
                 </div>
-                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+                <div class="leaf-content">Эскизное объемно-планировочное решение, согласование с заказчиком.</div>
             </div>
             <div class="leaf leaf_4" id="l4" data-toggled="0">
                 <div class="leaf-cover">
                     <h1>№ 4</h1>
                     <div class="leaf-img-container">
                     </div>
-                    <p>Расработка эскизного проекта здания с учётом эргономики человека</p>
+                    <p>Проектирование</p>
                 </div>
-                <div class="leaf-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illum explicabo nostrum, laborum sint neque similique beatae voluptas ipsum ipsam magnam pariatur, magni expedita labore sit iure nam quis. Neque.</div>
+                <div class="leaf-content">Проектирование с учетом эргономики человека и особенностей участка. Максимально удобная и биологически оптимизированная планировка.</div>
             
             </div>
         </div>
@@ -634,12 +627,11 @@ function main() {
 <!-- Popup window -->
 <script>
     let id_to_description = {
-        's1': '<p>— это единственный способ, заранее оценить и получить полное видение  об проектируемом доме. На этом этапе планируется вид дома, определяются его формы, архитектурный стиль, внутреннее устройство и внешний облик дома. Этот этап позволяет избежать многих сложностей в ходе дальнейшего проектирования.</p><p>На основе разработанной концепции здания и точно сформированного технического задания производится дальнейшая отработка планов в полном объеме в рамках архитектурного или строительного проекта.</p>',
+        's1': '<p>На этом этапе планируется вид дома, определяются его формы, архитектурный стиль, внутреннее устройство и внешний облик дома. На основе разработанной концепции здания и точно сформированного технического задания производится дальнейшая отработка планов в полном объеме в рамках архитектурного или строительного проекта.</p><p>Фотореалистичная 3D-картинка покажет, как сочетаются между собой материалы, мебель и декор. Визуализация дизайн-проекта позволяет понять, как будет выглядеть ваш дом после окончания ремонтных работ и какого результата добиваться от подрядчиков.</p><p>Содержание альбома эскизного проекта:</p><ul class="popup-list-3d"><li>Ведомость чертежей</li><li>Пояснительная записка</li><li>Климатическое обоснование</li><li>Генплан</li><li>Планы этажей с экспликацией и 3D-разрезом</li><li>Разрезы продольные и поперечные с соответствующими 3D-разрезами</li><li>Фасады</li><li>3D-визуализация</li></ul>',
         's2': '<p>— это часть комплекса работ по проектированию, направленная на создание документации, нужной для строительства или реконструкции объекта. Данный раздел решает следующие основные задачи:</p><ul><li>Детальная проработка внешнего вида объекта;</li><li>Выбор подходящих вариантов наружной и внутренней отделки фасадов и помещений;</li><li>Разработка планировочных, функциональных и организационных решений.</li></ul>',
         's3': '<p>позволяют ответить на вопрос, каким образом необходимо построить новое здание, чтобы оно отвечало требованиям безопасности, прочности и комфорта при эксплуатации.</p><p>В основе подготовки раздела КП лежат точные инженерные расчеты, выполняемые при задействовании совершенного программного обеспечения.</p>',
-        's4': '<p>— это процесс создания трехмерной модели пространства при помощи формы и цвета. Фотореалистичная 3D-картинка покажет, как сочетаются между собой материалы, мебель и декор.</p><p>Визуализация дизайн-проекта позволяет понять, как будет выглядеть ваш дом после окончания ремонтных работ и какого результата добиваться от подрядчиков.</p>',
-        's5': '<p>Вы обретаете четкое понимание того, каким должен быть идеальный дом. Обеспечиваете гармоничность и практичность интерьера навсегда.</p>',
-        's6': '<p>Чтобы  сэкономить ваши деньги, необходим авторский надзор для контроля воплощения проекта во время строительства.',
+        's4': '<p>Вы обретаете четкое понимание того, каким должен быть идеальный дом. Обеспечиваете гармоничность и практичность интерьера навсегда.</p>',
+        's5': '<p>Чтобы  сэкономить ваши деньги, необходим авторский надзор для контроля воплощения проекта во время строительства.',
     }
     let popup_container = document.querySelector('.popup-container')
     let popup = document.querySelector('.popup')
@@ -735,10 +727,10 @@ function main() {
 <script>
 
 let leaf_id_to_description = {
-    'l1': '<p>Анализ всего участка подразумевает то-то и то-то lorem ispum lorem ispum lorem ispum lorem ispum</p>',
-    'l2': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti debitis labore repellendus excepturi similique expedita sapiente recusandae. Dolores quod aperiam id sequi ex consequuntur quos totam accusantium provident inventore.',
-    'l3': '',
-    'l4': '',
+    'l1': '<p>Сбор данных об участке, таких как соляризация участка, роза ветров (среднегодовое направление силы ветра по месяцам), среднемесячная температура, количество дней отопительного периода, подъездные пути, движение поверхностных вод (весна/осень). Для изучения геодезического плана и исследования участка (несущая способность грунта, уровень грунтовых вод) необходима справка ГПЗУ. На основании этих данных определяем возможные технологии строительства на данном участке.</p>',
+    'l2': '<p>Изучение социального портрета заказчика, определение внешнего вида будущего дома, его этажности и площади.</p>',
+    'l3': '<p>Эскизное объемно-планировочное решение, согласование с заказчиком.</p>',
+    'l4': '<p>Проектирование с учетом эргономики человека и особенностей участка. Максимально удобная и биологически оптимизированная планировка.</p>',
 }
 let leaves = document.querySelectorAll('.leaf')
 let i = 0
@@ -784,10 +776,12 @@ if (window.innerWidth <= 600) {
 } else {
     leaves.forEach(function(item) {
         item.querySelector('.leaf-content').innerHTML = leaf_id_to_description[item.getAttribute('id')]
-        item.querySelector('img').addEventListener('click', function() {
+        item.querySelector('.leaf-img-container').addEventListener('click', function() {
             popup.querySelector('h1').innerHTML = item.querySelector('.leaf-cover').querySelector('p').innerHTML
             popup.querySelector('.popup-text').innerHTML = item.querySelector('.leaf-content').innerHTML
             popup_container.style.display = 'flex'
+            popup.style.display = 'flex'
+            popup1.style.display = 'none'
             anime({
                 targets: popup_container,
                 opacity: 1,

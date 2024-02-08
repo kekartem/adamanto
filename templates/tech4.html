@@ -46,10 +46,11 @@
             <div class="project-images-row-item"></div>
             <div class="project-images-row-item"></div>
             <div class="project-images-row-item"></div>
+            <div class="project-images-row-item"></div>
         </div>
     </div>
     <div class="project-description">
-        <h1>Деревянные дома</h1>
+        <h1>Каркасные дома</h1>
         <p>Каркасный дом — это дом, в основе которого есть несущий каркас. Он в свою очередь заполняется современными материалами для влаго-, ветро- и теплозащиты и обшивается отделочными материалами.</p>
         <p>Преимущества данной технологии</p>
         <ul>
@@ -65,41 +66,47 @@
 <section class="tech tech-single">
     <div class="tech-cards">
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="{{ url_for('static', path='/images/tech/tech1/cover.jpg') }}" alt=""></div>
+            <div class="tech-card-img-container tech1"></div>
             <div class="tech-description">
-                <h3>Деревянные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Дома из газобетона</h3>
+                    <p>Газобетон – один из самых популярных строительных материалов на сегодняшний день. Он позволяет с легкостью воплощать в жизнь всевозможные современные архитектурные формы.</p>
+                </div>
                 <div class="tech-learn-more">
                     <a href="/tech/1"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="/static/images/tech-wood.png" alt=""></div>
+            <div class="tech-card-img-container tech2"></div>
             <div class="tech-description">
-                <h3>Каменные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Кирпичные дома</h3>
+                    <p>Дома из кирпича — это живая классика, символ надежности и долговечности. Это хорошая инвестиция в недвижимость.</p>
+                </div>
                 <div class="tech-learn-more">
-                    <a href="/tech?id=2"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <a href="/tech/2"><h4>Смотреть примеры</h4>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
         <div class="tech-card">
-            <div class="tech-card-img-container"><img src="/static/images/tech-wood.png" alt=""></div>
+            <div class="tech-card-img-container tech3"></div>
             <div class="tech-description">
-                <h3>Кирпичные дома</h3>
-                <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
+                <div class="tech-description-caption">
+                    <h3>Дома из дерева</h3>
+                    <p>Для ценителей природы и натуральных материалов. Популярная и традиционная технология для нашего климата.</p>
+                </div>
                 <div class="tech-learn-more">
-                    <a href="/tech?id=3"><h4>Смотреть примеры</h4>
-                    <img src="/static/images/arrow-right-tech.png" alt=""></a>
+                    <a href="/tech/3"><h4>Смотреть примеры</h4>
+                    <img src="{{ url_for('static', path='images/arrow-right-tech.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
+
 <div class="popup-container">
     <div class="popup1">
         <h2>Отправить заявку</h2>
