@@ -676,11 +676,11 @@ main {
 
 .team-grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 48px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
     width: 100%;
-    padding: 64px;
+    padding: 64px 0;
     box-sizing: border-box;
 }
 
@@ -693,7 +693,6 @@ main {
 
 .team-card-left {
     width: 40%;
-    background: #FFF2DE;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -701,10 +700,24 @@ main {
 }
 
 .team-card-1 {
-    background: url(../images/team/1.webp);
+    background: url(../images/team/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+}
+
+.team-card-2 {
+    background: url(../images/team/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.team-card-3 {
+    background: url(../images/team/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .team-card-left img {
@@ -716,6 +729,9 @@ main {
     box-sizing: border-box;
     font-size: .9em;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .team-card-right h1 {
@@ -724,9 +740,8 @@ main {
 }
 
 .team-card-right h2 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
-    letter-spacing: .2em;
     color: rgba(0, 0, 0, .8);
 }
 
@@ -1213,6 +1228,7 @@ footer img {
 
 
 
+
 @media (max-width: 1160px) {
     header {
         padding: 0 32px 1em 32px;
@@ -1521,6 +1537,10 @@ footer img {
         width: 70%;
     }
 
+    .team-card {
+        aspect-ratio: 2 / 1;
+    }
+
     .slider-wrapper {
         aspect-ratio: 7 / 3;
     }
@@ -1712,7 +1732,7 @@ footer img {
     }
 
     .leaf_1 {
-        background: url(../images/work/1.webp);
+        background: url(../images/work/1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1721,7 +1741,7 @@ footer img {
     }
 
     .leaf_2 {
-        background: url(../images/work/2.webp);
+        background: url(../images/work/2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1731,7 +1751,7 @@ footer img {
 
     .leaf_3 {
         background-position: center;
-        background: url(../images/work/3.webp);
+        background: url(../images/work/3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -1740,7 +1760,7 @@ footer img {
     }
 
     .leaf_4 {
-        background: url(../images/work/4.webp);
+        background: url(../images/work/4.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
