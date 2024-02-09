@@ -145,6 +145,10 @@ main {
     padding: 0;
 }
 
+.team-caption {
+    text-align: center;
+}
+
 .info {
     width: 60%;
     font-size: 1.7em;
@@ -689,6 +693,7 @@ main {
     display: flex;
     box-shadow: 4px 4px 15px 0 rgba(0,0,0,.2);
     border-radius: 20px;
+    aspect-ratio: 2 / 1;
 }
 
 .team-card-left {
@@ -1276,10 +1281,14 @@ footer img {
     }
 
     .team-grid {
-        gap: 32px;
+        gap: 16px;
         width: 100%;
         padding: 64px 32px;
         box-sizing: border-box;
+    }
+
+    .team-card h1 {
+        font-size: 1.2em
     }
 
     .map {
@@ -1486,6 +1495,14 @@ footer img {
     .project-images-row-item {
         width: 10%;
     }
+
+    .team-card h1 {
+        font-size: 1.1em;
+    }
+
+    .team-card h2 {
+        font-size: .9em;
+    }
 }
 
 
@@ -1532,13 +1549,21 @@ footer img {
     }
 
     .team-grid {
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         width: 70%;
     }
 
     .team-card {
         aspect-ratio: 2 / 1;
+    }
+
+    .team-card h1 {
+        font-size: 1.5em;
+    }
+
+    .team-card h2 {
+        font-size: 1.2em;
     }
 
     .slider-wrapper {
@@ -2041,7 +2066,7 @@ footer img {
 
     .team-grid {
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, 100%);
+        grid-template-columns: repeat(3, 100%);
         padding-bottom: 1em;
         transform: translateX(0);
         gap: 32px;
@@ -2067,6 +2092,7 @@ footer img {
         width: 2em;
         height: 2em;
         font-weight: 400;
+        cursor: pointer;
     }
 
     .team-selected {
