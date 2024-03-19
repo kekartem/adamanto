@@ -688,6 +688,16 @@ main {
     box-sizing: border-box;
 }
 
+.team-picture {
+    aspect-ratio: 5 / 3;
+    width: 50%;
+    border: 1em solid #FFF2DE;
+    background: url(../images/team.png);
+    background-size: cover;
+    background-position: top;
+    margin-top: 1em;
+}
+
 .team-card {
     width: 100%;
     display: flex;
