@@ -1416,7 +1416,7 @@ footer img {
 
     .project-overview {
         grid-template-rows: repeat(2, auto);
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .project-images {
